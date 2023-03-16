@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Monster vs Human</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <h1>Monster vs Human</h1>
+    <label for="monster-health">Monster Health:</label> <br><br>
+    <div>
+      
+      <progress id="monster-health" value="100" max="100" class="prog"></progress>
+      <span id="monster-percentage">100%</span>
+    </div>
+    <label for="human-health">Player Health:</label> <br><br>
+    <div>
+       
+      <progress id="human-health" value="100" max="100" class="prog"></progress>
+      <span id="human-percentage">100%</span>
+      <button  id="icon" style="font-size:24px;color:red;
+       border:none;">+<i class="fa fa-heart"></i></button>
+     
+    </div>
+    <button id="attack-button">Attack</button>
+    <div style="display:flex;justify-content: center;" class="winner">
+    <div id="winner" style="justify-content:center;">
+      <p class="winnermessage"></p>
+      <button id="restart"class="restart" onclick="Restart();">Restart</button>
+    </div>
+      
+    </div>
+   
+    <script src="script.js"></script>
+  </body>
+</html>
